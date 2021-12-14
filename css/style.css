@@ -328,7 +328,7 @@ header {
 }
 
 .service {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -338,12 +338,13 @@ header {
 
 .sub__para {
     color: var(--clr-light);
+    text-align: center;
 }
 
 @media (min-width: 800px) {
     .services {
         display: flex;
-        max-width: 1000px;
+        max-width: 1300px;
         margin: 0 auto;
     }
 
