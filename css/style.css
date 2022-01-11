@@ -16,8 +16,8 @@
     --clr-accent: #16e0bd;
 
     --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1rem;
     --fs-body: 1rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -442,6 +442,9 @@ header {
 .portfolio__text--title {
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
+    margin-left: 2em;
+    margin-right: 2em;
+    
 }
 
 .portfolio__text--description {
