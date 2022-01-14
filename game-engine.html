@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Portfolio Website
+        </title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfroj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/GameDevPoster.png" alt="">
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Snapshots</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">About Project</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                <strong>Game Engine</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro" style="font-size: larger;">YSAoo Engine - Check out the report</p>
+            <img src="img/GameEngine.png" alt="A picture of myself" class="intro__img">
+
+        </section>
+
+        <!-- Services -->
+        <section class="myservices" id="services">
+            <h2 class="section__title section__title--services">
+                About the Engine
+            </h2>
+            <div class="services">
+                <div class="service">
+                    <h3 class="sub__service">Math Engine</h3>
+                    <p class="sub__para">
+                        3D Math is the core of any game engine as we need to handle vectors that represent
+points on an object inside a game. Most modern 3D games are made up of
+three-dimensional objects in a virtual world. 
+                    </p>
+                    <p class="sub__para">
+                        A game engine needs to process all the
+positions, orientations, and scales of all these objects, transform them into screen space to be
+rendered on screen. 
+                    </p>
+                    <p class="sub__para">
+                        SIMD is used in game engine math libraries because it permits vector operations such as dot
+products and matrix multiplication to be performed very fast. I have used SIMD to speed up
+the calculation.
+                    </p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3 class="sub__service">Rendering Engine</h3>
+                    <p class="sub__para">
+                        For an image to show up on the screen, it has to be rendered onto your display monitor.
+The graphics engine is responsible for the display on the screen by taking in information about
+the entire scene such as color, texture, geometry, the shadow of an individual object and
+lighting, the viewpoint of a scene.
+
+                    </p>
+                    <p class="sub__para">
+                        I have built a lighting system using the Phong
+Lighting system. I have also developed the code for shadows.
+                    </p>
+                    <p class="sub__para">
+                        Components of Phong lighting model using RGB model: OpenGL allows us to break
+                        this light's emitted intensity into three parts: ambient, diffuse, and specular. Each type of
+                        light component consists of three major color components.
+                        
+                    </p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3 class="sub__service">Physics Engine</h3>
+                    <p class="sub__para">
+                        In the real world, objects are governed by the laws of physics. For example, objects
+collide and are set in motion according to Newton's laws of motion. In the game world, for
+objects to act similar to the real world, it has to have the same system built through
+programming.
+
+                    </p>
+                    <p class="sub__para">
+                        I am planning to work on Physics Engine after I am done implementing the Rendering Engine.
+                    </p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3 class="sub__service">Low Level Systems</h3>
+                    <p class="sub__para">
+                        The foundation for any program is low-level systems like logging, debugging,
+profiling, asset manager, file manager, event system, etc. Implementing them is essential for
+a game engine.
+
+                    </p>
+                    <p class="sub__para">
+                        I want to make the renders more realistic and efficient to compute.
+                    </p>
+                    <p class="sub__para">
+                        I also want to expand my toolset to other 3D Graphics APIs like DirectX 3D and Vulkan.
+                    </p>
+                </div> <!-- / service -->
+            </div>  <!-- / services -->
+            <a href="#work" class="btn">Snapshots</a>
+            <a href="Project2-GameEngine-Report.pdf" class="btn" download="GameEngine-Report">Click to download report</a>
+            
+        </section>
+
+        <section class="mywork" id="work">
+            <h2 class="section__title section__title--work">
+                Snapshots
+            </h2>
+            <p class="section__subtitle section__subtitle--work">
+
+            </p>
+            <div class="portfolio" style="grid-template-columns: minmax(200px, 500px);grid-template-rows: minmax(200px, 500px);">
+                <a href="game-engine.html" class="portfolio__item">
+                    <img src="img/phong2.png" alt="" class="portfolio__img">
+                    <div class="portfolio__text">
+                        <div class="portfolio__text--title">Phong Lighting</div>
+                    </div>
+                </a>
+                <a href="game-engine.html" class="portfolio__item">
+                    <img src="img/GameEngine.png" alt="" class="portfolio__img">
+                    <div class="portfolio__text">
+                        <div class="portfolio__text--title">Game Engine</div>
+                    </div>
+                </a>
+            </div>
+            
+        </section>
+
+        <footer class="footer">
+            <a href="mailto:mygamedev@gm.com" class="footer-link">
+                mailto:mygamedev@gm.com
+            </a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="#">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
