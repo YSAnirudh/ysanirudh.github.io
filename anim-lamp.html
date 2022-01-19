@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
-            Project - Game Engine
+            Project - Animated Lamp
         </title>
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -39,90 +39,57 @@
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                <strong>Game Engine</strong>
+                <strong>Animated Lamp</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro" style="font-size: larger;">YSAoo Engine - Check out the report</p>
-            <img src="img/GameEngine.png" alt="A picture of myself" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro" style="font-size: larger;">A Pixar Style Lamp</p>
+            <img src="img/AnimLamp.png" alt="A picture of myself" class="intro__img">
 
         </section>
 
         <!-- Services -->
         <section class="myservices" id="services">
             <h2 class="section__title section__title--services">
-                About the Engine
+                About the Project
             </h2>
             <div class="services">
                 <div class="service">
-                    <h3 class="sub__service">Math Engine</h3>
+                    <h3 class="sub__service">3D Modelling</h3>
                     <p class="sub__para">
-                        3D Math is the core of any game engine as we need to handle vectors that represent
-points on an object inside a game. Most modern 3D games are made up of
-three-dimensional objects in a virtual world. 
-                    </p>
-                    <p class="sub__para">
-                        A game engine needs to process all the
-positions, orientations, and scales of all these objects, transform them into screen space to be
-rendered on screen. 
-                    </p>
-                    <p class="sub__para">
-                        SIMD is used in game engine math libraries because it permits vector operations such as dot
-products and matrix multiplication to be performed very fast. I have used SIMD to speed up
-the calculation.
+                        Modelling of the Lamp was done with primitive shapes. The arms, the hinge, and the bulb shape was done using cubes and spheres.
+                        The curvature of the Lamp Shade and the Lamp Base was done using two Bezier Curves each. One for the overall shape and one to handle the curvature of the Lamp Shade and the Base.
                     </p>
                 </div> <!-- / service -->
 
                 <div class="service">
-                    <h3 class="sub__service">Rendering Engine</h3>
+                    <h3 class="sub__service">Texturing</h3>
                     <p class="sub__para">
-                        For an image to show up on the screen, it has to be rendered onto your display monitor.
-The graphics engine is responsible for the display on the screen by taking in information about
-the entire scene such as color, texture, geometry, the shadow of an individual object and
-lighting, the viewpoint of a scene.
+                        Texturing was done by selecting materials for each of the parts of the Lamp. The arms of the Lamp were given a high anisotropic value to reflect the brass properties. 
+                        The Lamp Shade and the Base were given a lesser value of anisotropy. All the parts were given a bit of shine to reflect that they were a metal.
+                    </p>
+                </div> <!-- / service -->
 
+                <div class="service">
+                    <h3 class="sub__service">Rigging</h3>
+                    <p class="sub__para">
+                        Rigging becomes tedious if we don't have a proper hierarchy of the bones in the armature. Each of the bone from the base is linked to the previous bone to the top, that is the Lamp Shade.
+                        There are two control bones with inverse kinematics to help ease the movement of the whole model for animation.
+                    </p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3 class="sub__service">Animation</h3>
+                    <p class="sub__para">
+                        The Animation runs at 30 frames per second and the video is around 15 seconds long. 
+                        Animation of the whole lamp was made easier with inverse kinematics as I had to take care of only 2 control bones rather that 7-8 individual bones.
                     </p>
                     <p class="sub__para">
-                        I have built a lighting system using the Phong
-Lighting system. I have also developed the code for shadows.
-                    </p>
-                    <p class="sub__para">
-                        Components of Phong lighting model using RGB model: OpenGL allows us to break
-                        this light's emitted intensity into three parts: ambient, diffuse, and specular. Each type of
-                        light component consists of three major color components.
                         
                     </p>
-                </div> <!-- / service -->
-
-                <div class="service">
-                    <h3 class="sub__service">Physics Engine</h3>
-                    <p class="sub__para">
-                        In the real world, objects are governed by the laws of physics. For example, objects
-collide and are set in motion according to Newton's laws of motion. In the game world, for
-objects to act similar to the real world, it has to have the same system built through
-programming.
-
-                    </p>
-                    <p class="sub__para">
-                        I am planning to work on Physics Engine after I am done implementing the Rendering Engine.
-                    </p>
-                </div> <!-- / service -->
-
-                <div class="service">
-                    <h3 class="sub__service">Low Level Systems</h3>
-                    <p class="sub__para">
-                        The foundation for any program is low-level systems like logging, debugging,
-profiling, asset manager, file manager, event system, etc. Implementing them is essential for
-a game engine.
-
-                    </p>
-                    <p class="sub__para">
-                        I want to make the renders more realistic and efficient to compute.
-                    </p>
-                    <p class="sub__para">
-                        I also want to expand my toolset to other 3D Graphics APIs like DirectX 3D and Vulkan.
-                    </p>
-                </div> <!-- / service -->
+                </div>  <!-- / service -->
             </div>  <!-- / services -->
-            <a href="#work" class="btn">Go to the Report</a>
+            <a href="#work" class="btn">Go to the Video</a>
+            <!-- <a href="Project2-GameEngine-Report.pdf" class="btn" download="GameEngine-Report">Click to download report</a> -->
+            
         </section>
 
         <!-- About Me -->
@@ -131,11 +98,11 @@ a game engine.
                 The Idea
             </h2>
             <p class="section__subtitle section__subtitle--aboutme">
-                The First YSAoo Engine, not the Next Unreal or Unity
+                Exploring Animation
             </p>
             <div class="aboutme__body">
-                <p>When a person is working on something so immaculate, They would want to make something similar themselves, but better.</p>
-                <p>This Game Engine is something similar but better, in progress.</p>
+                <p>I have watched a lot of movies with PIXAR and that is the inspiration foe this project.</p>
+                <p>This is one of my first animations. I thought this would be best to start with as it conveys an image with yet so simple mechanic.</p>
             </div>
             <img src="" alt="" class="aboutme__img">
             
@@ -143,15 +110,18 @@ a game engine.
 
         <section class="mywork" id="work">
             <h2 class="section__title section__title--work">
-                Report
+                Video
             </h2>
             <p class="section__subtitle section__subtitle--work">
 
             </p>
-            <div class="portfolio" style="grid-template-columns: minmax(200px, 500px);grid-template-rows: minmax(200px, 500px);">
-                <iframe src="Project2-GameEngine-Report.pdf" style="width: 100%;height: 100%;border: none;"></iframe>
+            
+            <div class="portfolio">
+                <video style="max-width: 100%;" controls>
+                    <source src="img/AnimLamp.mp4" type="video/mp4">
+                </video>
             </div>
-            <a href="Project2-GameEngine-Report.pdf" class="btn" download="GameEngine-Report" style="max-width: 400px;">Click to download report</a>
+            
         </section>
 
         <footer class="footer">

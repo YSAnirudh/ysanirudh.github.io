@@ -386,7 +386,7 @@ header {
         left: -1em;
         width: calc(100% + 2em);
         padding-left: 1em;
-        padding-right: calc(200px + 3em);
+        padding-right: 1em;
     }
 
     .aboutme__img {
@@ -407,6 +407,9 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
     /* max-width: 500px; margin: 0 auto; 3, 3fr */
 }
 
@@ -495,6 +498,7 @@ header {
 }
 
 .social-list {
+    color: var(--clr-accent);
     list-style: none;
     display: flex;
     justify-content: center;
@@ -504,9 +508,11 @@ header {
 
 .social-list__item {
     margin: 0 .5em;
+    color: var(--clr-accent);
 }
 
 .social-list__link {
+    color: var(--clr-accent);
     padding: 0.5em;
 }
 
