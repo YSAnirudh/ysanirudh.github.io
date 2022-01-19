@@ -203,6 +203,16 @@ header {
     position: fixed;
 }
 
+.home {
+    color: var(--clr-accent);
+    font-style: var(--fw-bold);
+    font-size: var(--fs-h3);
+    display: block;
+    position: absolute;
+    right: 1em;
+    border: 2px var(--clr-accent) 2px;
+}
+
 .nav-open .hamburger {
     transform: rotate(.625turn);
 }

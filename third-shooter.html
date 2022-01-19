@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Project - Third Person Shooter
+        </title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/GameDevPoster.png" alt="">
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="home"><a href="index.html" class="nav__link">Home</a></span>
+            </button>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                <strong>Third Person Shooter</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro" style="font-size: larger;">Shooter game with basic AI and shooting mechanics</p>
+            <img src="img/TPPShooter.png" alt="A picture of myself" class="intro__img">
+
+        </section>
+
+        <!-- Services -->
+        <section class="myservices" id="services">
+            <h2 class="section__title section__title--services">
+                About the Game
+            </h2>
+            <div class="services">
+                <div class="service">
+                    <h3 class="sub__service">Shooting</h3>
+                    <p class="sub__para">
+                        The Shooting system in the game is done using projection. A vector is projected from the muzzle of the gun in the direction of the normal of the the muzzle.
+                        Whenever a collision is detected in the line that is traced, we get the imapct vector. This is where we can spawn impact animation.
+                    </p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3 class="sub__service">Artificial Intelligence</h3>
+                    <p class="sub__para">
+                        The AI is divided into two parts.<br>
+                        The Path Tracing where the AI follows a valid path to the required destination. This is done by giving the AI a valid space to walk and a target.
+                        When the player comes into the sight of the AI, it starts walking towards the player.<br>
+                        The Behaviour trees which control how an AI behaves when an event occurs. For example, when it sees the player, an event occurs and the AI is made to walk towards the player.
+                        When it reaches a set distance the AI starts shooting. It also follows a patrol path that is goes in when the payer is not in sight.
+                    </p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3 class="sub__service">Health System</h3>
+                    <p class="sub__para">
+                        Health system is build using impact collision on the player and the AI. Both the player and the AI are given a health bar and whenever they come in contact with a bullet, their health is deducted.
+                    </p>
+                </div> <!-- / service -->
+            </div>  <!-- / services -->
+            <a href="#work" class="btn">Go to the Gameplay</a>
+            <!-- <a href="Project2-GameEngine-Report.pdf" class="btn" download="GameEngine-Report">Click to download report</a> -->
+            
+        </section>
+
+        <!-- About Me -->
+        <section class="aboutme" id="aboutme">
+            <h2 class="section__title section__title--aboutme">
+                The Idea
+            </h2>
+            <p class="section__subtitle section__subtitle--aboutme">
+                Exploring Shooting and AI
+            </p>
+            <div class="aboutme__body">
+                <p>To make bigger projects containing great shooting systems, It is always better to make a smaler one first.</p>
+                <p>This also made me understand AI in games better, giving me an inspiration to explore more into AI.</p>
+            </div>
+            <img src="" alt="" class="aboutme__img">
+            
+        </section>
+
+        <section class="mywork" id="work">
+            <h2 class="section__title section__title--work">
+                Gameplay
+            </h2>
+            <p class="section__subtitle section__subtitle--work">
+
+            </p>
+            
+            <div class="portfolio">
+                <video style="max-width: 100%;" controls>
+                    <source src="img/ThirdShooter.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+        </section>
+
+        <footer class="footer">
+            <a href="mailto:ysanirudh@gmail.com" class="footer-link">
+                Contact me : ysanirudh@gmail.com
+            </a>
+            <ul class="social-list">
+                <!-- <li class="social-list__item">
+                    <a class="social-list__link" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li> -->
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/YSAnirudh" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/yellanki_anirudh/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/ysanirudh/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

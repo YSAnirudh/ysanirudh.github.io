@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Project - Castle Escape
+        </title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/GameDevPoster.png" alt="">
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="home"><a href="index.html" class="nav__link">Home</a></span>
+            </button>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                <strong>Castle Escape</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro" style="font-size: larger;">Steal the treasure</p>
+            <img src="img/CastleEscape.png" alt="A picture of myself" class="intro__img">
+
+        </section>
+
+        <!-- Services -->
+        <section class="myservices" id="services">
+            <h2 class="section__title section__title--services">
+                About the Game
+            </h2>
+            <div class="services">
+                <div class="service">
+                    <h3 class="sub__service">Carrying</h3>
+                    <p class="sub__para">
+                        Lifting objects is the way to progress in the game. This mechanism is linked to right click. 
+                        When an object is pointed towards and the right click is held, The object follows the cursors and gives the perception of lifting the object.
+                    </p>
+                </div> <!-- / service -->
+
+                <div class="service">
+                    <h3 class="sub__service">Triggers</h3>
+                    <p class="sub__para">
+                        There are triggers everywhere in the game. Firstly, the skull needs to be thrown to the other side to get the fake statue down. 
+                        Then, there is a trigger to close and open the final gate to escape the castle based on the statue. You replace the real statue with the fake one and esacpe.
+                    </p>
+                </div> <!-- / service -->
+            </div>  <!-- / services -->
+            <a href="#work" class="btn">Go to the Gameplay</a>
+            <!-- <a href="Project2-GameEngine-Report.pdf" class="btn" download="GameEngine-Report">Click to download report</a> -->
+            
+        </section>
+
+        <!-- About Me -->
+        <section class="aboutme" id="aboutme">
+            <h2 class="section__title section__title--aboutme">
+                The Idea
+            </h2>
+            <p class="section__subtitle section__subtitle--aboutme">
+                Building a small linear game without depth.
+            </p>
+            <div class="aboutme__body">
+                <p>While understanding game design, making a game with no depth is a way to understand how bland linear games can be.</p>
+                <p>Apart from this the mechanics are also interesting.</p>
+            </div>
+            <img src="" alt="" class="aboutme__img">
+            
+        </section>
+
+        <section class="mywork" id="work">
+            <h2 class="section__title section__title--work">
+                Gameplay
+            </h2>
+            <p class="section__subtitle section__subtitle--work">
+
+            </p>
+            
+            <div class="portfolio">
+                <video style="max-width: 100%;" controls>
+                    <source src="img/CastleEscape.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+        </section>
+
+        <footer class="footer">
+            <a href="mailto:ysanirudh@gmail.com" class="footer-link">
+                Contact me : ysanirudh@gmail.com
+            </a>
+            <ul class="social-list">
+                <!-- <li class="social-list__item">
+                    <a class="social-list__link" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li> -->
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/YSAnirudh" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/yellanki_anirudh/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/ysanirudh/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
